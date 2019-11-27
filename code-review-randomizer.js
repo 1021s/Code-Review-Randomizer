@@ -1,7 +1,7 @@
 // run this script after you do a pull request and group slack the individuals listed
 
 const codeReview = yourName => {
-  const seniorEngineers = ['Inna', 'Kyle', 'Matthew', 'Patrick', 'Sayer']
+  const seniorEngineers = ['Inna', 'Kyle', 'Matthew', 'Patrick', 'Sayer'];
   let peopleToReviewYourCode = [];
 
   const randomizer = () => {
@@ -18,4 +18,4 @@ const codeReview = yourName => {
   return peopleToReviewYourCode;
 }
 
-codeReview('yourName')
+codeReview('yourName');
