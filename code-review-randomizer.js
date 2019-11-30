@@ -8,6 +8,7 @@ const codeReview = yourName => {
     const engineerIndex = Math.floor(Math.random() * Math.floor(seniorEngineers.length));
     if (seniorEngineers[engineerIndex] !== yourName) {
       peopleToReviewYourCode.push(seniorEngineers[engineerIndex]);
+      seniorEngineers.splice(engineerIndex, 1);
     }
     if (peopleToReviewYourCode.length < 2) {
       randomizer();
